@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/home';
+import About from './components/about';
+import Contact from './components/contact';
+import Projects from './components/projects';
+import Poll from './components/poll';
+import Blog from './components/blog';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          TESTING CONFIG, IS THIS WORKING<code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path ='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/poll' component={Poll} />
+        <Route path='/blog' component={Blog} />
+      </Switch>
+    </Router>
   );
 }
 
