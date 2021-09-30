@@ -14,11 +14,11 @@ class Navbar extends Component {
   render() {
     return(
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
+        <h1 className="navbar-logo">React<i className="fas fa-react"></i></h1>
         <div className="menu-icon" onClick={this.clickHandler}>
           <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
-        <ul className={this.state.clicked ? 'mav-menu active' : 'nav-menu'}>
+        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
@@ -29,6 +29,7 @@ class Navbar extends Component {
               )
           })}
         </ul>
+        <Buttons>Sign Up</Buttons>
       </nav>
     )
   }
