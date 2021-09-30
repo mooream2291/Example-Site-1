@@ -72,7 +72,7 @@
   }
 
   .nav-menu.active {
-    background: purple;
+    background: blue;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -81,7 +81,7 @@
 
   .nav-links {
     text-align: center;
-    padding: 2res;
+    padding: 2rem;
     width: 100%;
     display: table;
   }
@@ -106,5 +106,33 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  .fa-times {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: beige;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: beige;
+    color: purple;
+    transition: 250ms;
+  }
+
+  Buttons {
+    display: none;
   }
 }
