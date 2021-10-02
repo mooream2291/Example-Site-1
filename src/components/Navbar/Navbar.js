@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import './Navbar.css';
 import { Buttons } from '../Buttons';
+import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   state = { clicked: false }
@@ -14,7 +16,7 @@ class Navbar extends Component {
   render() {
     return(
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">React<i className="fas fa-react"></i></h1>
+        <Link to=""/>
         <div className="menu-icon" onClick={this.clickHandler}>
           <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
@@ -29,7 +31,6 @@ class Navbar extends Component {
               )
           })}
         </ul>
-        <Buttons>Sign Up</Buttons>
       </nav>
     )
   }
