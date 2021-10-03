@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import './Navbar.css';
-import { Buttons } from '../Buttons';
-import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
