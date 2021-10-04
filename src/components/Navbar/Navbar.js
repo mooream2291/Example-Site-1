@@ -14,7 +14,7 @@ class Navbar extends Component {
   render() {
     return(
       <nav className="NavbarItems">
-        <Link to=""/>
+        {/* <Link to=""/> */}
         <div className="menu-icon" onClick={this.clickHandler}>
           <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>

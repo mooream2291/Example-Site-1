@@ -8,25 +8,25 @@ export const IconsData = [
 {
   title: 'github',
   url: 'https://github.com/mooream2291',
-  icon: <FaGithub />,
-  cName: 'social-icon'
+  icon: <FaIcons.FaGithub />,
+ 
 },
 {
   title: 'instagram',
   url: 'https://www.instagram.com/east_west_9/',
-  icon: <FaInstagram />,
+  icon: <FaIcons.FaInstagram />,
   cName: 'social-icon',
 },
 {
   title: 'facebook',
   url: 'https://www.facebook.com/mooream22',
-  icon: <FaFacebook />,
+  icon: <FaIcons.FaFacebook />,
   cName: 'social-icon',
 },
 {
   title: 'linkedin',
   url: 'https://www.linkedin.com/in/ashley-m-moore/',
-  icon: <FaLinkedin />,
+  icon: <FaIcons.FaLinkedin />,
   cName: 'social-icon',
 }
 ]
