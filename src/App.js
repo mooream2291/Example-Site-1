@@ -8,23 +8,22 @@ import { Grid, Row, Column } from './components/Grid';
 function App() {
   return (
     <div className='App'>
-        <Navbar />
-      <h1>GRIDDING IT</h1>
+      <h1>Ashley Moore</h1>
+      <h3>Software Engineer</h3>
       <Grid>
         <Row>
-          <Column size={1}>
-            COLUMN IS HERE ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+          <Column size={3}>
           </Column>
         </Row>
         <Row>
           <Column size={2}>
-            I WILL EXPAND ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+            I WILL EXPAND
           </Column>
-          <Column size={1} collapse="extra smalllls">
-            byeeeee ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+          <Column size={1} collapse="xs">
+            byeeeee
           </Column>
           <Column size={1}>
-            I WILL EXPAND ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+            I WILL EXPAND
           </Column>
         </Row>
       </Grid>
