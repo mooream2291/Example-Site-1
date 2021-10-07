@@ -2,12 +2,32 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import TestStyledComp from './components/TestComp';
+import { Grid, Row, Column } from './components/Grid';
 // import NavIcons from './components/Icons/IconNav';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
+        <Navbar />
+      <h1>GRIDDING IT</h1>
+      <Grid>
+        <Row>
+          <Column size={1}>
+            COLUMN IS HERE ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+          </Column>
+        </Row>
+        <Row>
+          <Column size={2}>
+            I WILL EXPAND ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+          </Column>
+          <Column size={1} collapse="extra smalllls">
+            byeeeee ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+          </Column>
+          <Column size={1}>
+            I WILL EXPAND ksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdfksjdngkhskgbdkbgblkbgbfdgbdjbfgjbdfjgbjhdbfgljhbdsfljhbjldshbfgjhbdfgjlhbdljfgblsdjhbfgljhdsbfgljhbdljhbdljhfbgjhdbgjlhbdfgljhbdf
+          </Column>
+        </Row>
+      </Grid>
       <TestStyledComp />
     </div>
   );
