@@ -17,9 +17,18 @@ const Navbar = () => {
             LOGO
           </NavLogo>
             <MobileIcon onClick={clickHandler}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
-          <NavMenu onClick={clickHandler}>
+          <NavMenu onClick={clickHandler} click={click}>
             <NavItem>
               <NavLinks to='/'>Home</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='/projects'>Projects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='/about'>About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='/contact'>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
