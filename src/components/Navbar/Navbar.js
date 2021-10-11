@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Nav, NavbarContainer, NavLogo, MobileIcon } from './Navbar.elements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbar.elements';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
@@ -17,6 +17,11 @@ const Navbar = () => {
             LOGO
           </NavLogo>
             <MobileIcon onClick={clickHandler}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
+          <NavMenu onClick={clickHandler}>
+            <NavItem>
+              <NavLinks to='/'>Home</NavLinks>
+            </NavItem>
+          </NavMenu>
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>
