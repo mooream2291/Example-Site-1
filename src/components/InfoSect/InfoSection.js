@@ -15,7 +15,11 @@ const InfoSection = ({ lightBg, imgStart }) => {
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
-              Hello I am here.
+                <Link to='/message'>
+                  <Button big fontBig primary={primary}>
+                    {buttonLabel}
+                  </Button>
+                </Link>
               </TextWrapper>
             </InfoColumn>
           </InfoRow>
