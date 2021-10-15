@@ -1,9 +1,8 @@
 import React from 'react';
-import TestStyledComp from './components/TestComp';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route }from 'react-router-dom';
 import GlobalStyles from './globalStyles';
-import Home from './Pages/Home/Home';
+import Home from './Pages/Homepage/Home';
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
-      <TestStyledComp />
     </Router>
   );
 }

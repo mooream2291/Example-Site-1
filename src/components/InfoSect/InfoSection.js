@@ -5,9 +5,9 @@ import {
   InfoRow,
   InfoColumn,
   TextWrapper
-} from './Info.elements';
+} from './InfoSection.elements';
 
-const InfoSect = ({ lightBg, imgStart }) => {
+const InfoSection = ({ lightBg, imgStart }) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -25,5 +25,5 @@ const InfoSect = ({ lightBg, imgStart }) => {
   );
 };
 
-export default InfoSect;
+export default InfoSection;
  
