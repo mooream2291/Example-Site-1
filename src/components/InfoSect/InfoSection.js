@@ -1,5 +1,6 @@
-import React from 'react'
-import { Container } from '../../globalStyles';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Button } from '../../globalStyles';
 import {
   InfoSec,
   InfoRow,
@@ -7,7 +8,11 @@ import {
   TextWrapper
 } from './InfoSection.elements';
 
-const InfoSection = ({ lightBg, imgStart }) => {
+const InfoSection = ({ 
+  primary, 
+  lightBg,
+  imgStart,
+  buttonLabel }) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
