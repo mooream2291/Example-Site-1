@@ -5,14 +5,26 @@ import {
   InfoSec,
   InfoRow,
   InfoColumn,
-  TextWrapper
+  TextWrapper,
+  Heading,
+  Subtitle,
+  ImgWrapper,
+  Img
 } from './InfoSection.elements';
 
 const InfoSection = ({ 
   primary, 
   lightBg,
   imgStart,
-  buttonLabel }) => {
+  buttonLabel,
+  description,
+  headline,
+  lightText,
+  lightTextDesc,
+  img,
+  alt,
+  start
+ }) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -20,12 +32,19 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
-                <Link to='/message'>
+                <Heading lightText={lightText}></Heading>
+                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                  {/* <Link to='/message'>
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>
-                </Link>
+                  </Link> */}
               </TextWrapper>
+            </InfoColumn>
+            <InfoColumn>
+              <ImgWrapper start={start}>
+                <Img src={img} alt={alt} />
+              </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>

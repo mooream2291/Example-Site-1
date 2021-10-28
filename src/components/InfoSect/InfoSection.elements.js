@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const InfoSec = styled.div`
-  color: white;
+  color: #e5eaf0;
   padding: 100px 0;
-  background: ${({ lightBg }) => (lightBg ? 'white' : 'blue')};
+  background: ${({ lightBg }) => (lightBg ? '#e5eaf0' : 'black')};
 `;
 
 export const InfoRow = styled.div`
@@ -40,4 +40,33 @@ padding-bottom: 60px;
   padding: 65px;
 
 }
+`;
+
+export const Heading = styled.h1`
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+color: ${({lightText}) => (lightText ? '#e5eaf0' : 'black')};
 `
+
+export const Subtitle = styled.p`
+max-width: 440px;
+margin-bottom: 35px;
+font-size: 18px;
+line-height: 24px;
+color: ${({lightTextDesc}) => (lightTextDesc ? '#e5eaf0' : 'green')};
+`;
+
+export const ImgWrapper = styled.div`
+max-width: 555px;
+display: flex;
+justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+`
+export const Img = styled.img`
+padding-right: 0;
+border: 0;
+max-width: 100%;
+vertical-align: middle;
+display: inline-block;
+max-height: 500px;
+`;
