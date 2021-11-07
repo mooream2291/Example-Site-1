@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import * as AiIcons from 'react-icons/ai';
+import * as GrIcons from 'react-icons/gr';
 import { Button } from '../../globalStyles';
 import { 
   Nav,
   NavbarContainer,
-  NavLogo, MobileIcon,
+  MobileIcon,
   NavMenu, NavItem,
   NavLinks,
   NavItemBtn,
@@ -45,24 +47,8 @@ const Navbar = () => {
               <NavLinks to='/projects'>Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='/about'>About</NavLinks>
-            </NavItem>
-            <NavItem>
               <NavLinks to='/contact'>Contact</NavLinks>
             </NavItem>
-            <NavItemBtn>
-              {button ? (
-                <NavBtnLink to="/contact">
-                  <Button>Message</Button>
-                </NavBtnLink>
-              ) : (
-                <NavBtnLink to='/contact'>
-                  <Button fontBig primary>
-                    Message
-                  </Button>
-                </NavBtnLink>
-              )}
-            </NavItemBtn>
           </NavMenu>
         </NavbarContainer>
       </Nav>

@@ -17,21 +17,11 @@ z-index: 999;
 //global style that can be used on any page
 export const NavbarContainer = styled(Container)`
 display: flex;
-justify-content: space-between;
+justify-content: right;
 height: 80px;
 
 ${Container}
 `;
-
-// export const NavLogo = styled(Link)`
-// color: white;
-// justify-self: flex-start;
-// cursor: pointer;
-// text-decoration: none;
-// font-size: 2rem;
-// align-items: right;
-// padding: 1.2rem
-// `;
 
 export const MobileIcon = styled.div`
 display: none;

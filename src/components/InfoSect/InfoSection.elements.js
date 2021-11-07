@@ -35,6 +35,8 @@ export const TextWrapper = styled.div`
 max-width: 540px;
 padding-top: 0;
 padding-bottom: 60px;
+inline-size: 540px;
+overflow-wrap: break-word;
 
 @media screen and (max-width: 768px) {
   padding: 65px;
@@ -48,7 +50,6 @@ font-size: 48px;
 line-height: 1.1;
 color: ${({lightText}) => (lightText ? '#e5eaf0' : 'black')};
 `
-
 export const Subtitle = styled.p`
 max-width: 440px;
 margin-bottom: 35px;

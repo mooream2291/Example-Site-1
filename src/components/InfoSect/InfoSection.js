@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Button } from '../../globalStyles';
+import { Container } from '../../globalStyles';
 import {
   InfoSec,
   InfoRow,
@@ -8,6 +8,7 @@ import {
   TextWrapper,
   Heading,
   Subtitle,
+  Description,
   ImgWrapper,
   Img
 } from './InfoSection.elements';
@@ -34,11 +35,6 @@ const InfoSection = ({
               <TextWrapper>
                 <Heading lightText={lightText}></Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                  {/* <Link to='/message'>
-                  <Button big fontBig primary={primary}>
-                    {buttonLabel}
-                  </Button>
-                  </Link> */}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
