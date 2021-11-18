@@ -15,9 +15,10 @@ z-index: 999;
 `;
 
 //global style that can be used on any page
+//aligning navigation items on the page
 export const NavbarContainer = styled(Container)`
 display: flex;
-justify-content: right;
+justify-content: center;
 height: 80px;
 
 ${Container}
@@ -53,7 +54,7 @@ text-align: center;
   left: ${({click}) => (click ? 0 : '-100%')};
   opacity: 1;
   transition: all 0.5s ease;
-  background: red;
+  background: black;
 }
 `;
 
@@ -89,7 +90,7 @@ height: 100%;
   display: table;
 
   &:hover {
-    color: purple;
+    color: #e5eaf0;
     transition: all 0.3s ease;
     }
   }
